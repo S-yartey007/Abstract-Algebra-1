@@ -1,0 +1,119 @@
+\section*{Quotient by normal subgroups}
+
+Let us recall the main point which is that an arbitrary subgroup $H$ of $G$ leads to two partitions of $G$, which are [cite: 1, 2, 5, 6]
+$$G/{\sim_L} = \{aH \mid a \in G\}, \quad G/{\sim_R} = \{Ha \mid a \in G\}. $$
+The relation $\sim_L$ satisfies (*) and $\sim_R$ satisfies (**). As we have seen earlier, these relations, and for that matter the corresponding partitions, are different. [cite: 8] The condition that $\sim_L$ and $\sim_R$ coincide translates into a condition on $H$: for such special subgroups (*) and (**) coincide. [cite: 9]
+
+\subsection*{Proposition 4.10}
+The relations $\sim_L, \sim_R$ corresponding to subgroup $H$ coincide if and only if $H$ is normal. [cite: 10, 11, 12]
+
+\textbf{Proof} \\
+Two relations coincide if the corresponding partitions agree. So $\sim_L = \sim_R \iff$ left and right-cosets of $H$ coincide [cite: 14]
+$$\iff (\forall g \in G): gH = Hg,$$
+which is one of the equivalent conditions defining the notion of normal subgroup, thus the statement. [cite: 16]
+
+The importance of the above results is that if $H$ is normal, then the same equivalence relation $\sim = \sim_L = \sim_R$ corresponding to $H$ satisfies both (*) and (**) and hence by Proposition 4.3, the quotient [cite: 17, 18]
+$$G/\sim = \{aH \mid a \in G\} = \{Ha \mid a \in G\} $$
+has a natural group structure.
+
+\subsection*{Definition 4.11}
+Let $H$ be a normal subgroup of a group $G$. The quotient group of $G$ modulo $H$, denoted $G/H$, is the group $G/\sim$ defined above.In terms of (left-) cosets, the product in $G/H$ is defined by [cite: 28, 29]
+$$(aH)(bH) := (ab)H $$
+The identity element $e_{G/H}$ of the quotient group $G/H$ is the coset of the identity, $eG = H$. By Proposition 4.3 the quotient function
+$$\pi: G \to G/H, \quad g \mapsto gH = Hg$$
+is a group homomorphism.
+
+\subsection*{Example}
+Recall the cyclic groups $\mathbb{Z}_n$. Indeed we defined $\mathbb{Z}_n$ as the set of equivalence classes in $\mathbb{Z}$ with respect to the congruence relation [cite: 45]
+$$(\forall a,b \in \mathbb{Z}): a \equiv b \pmod n \iff n \mid (b-a).$$
+Now we recognize that $n \mid (b-a)$ is equivalent to $b-a \in n\mathbb{Z}$,  which is the relation $\sim$ corresponding (in abelian notation) to the subgroup $n\mathbb{Z}$ of $\mathbb{Z}$. [cite: 52] This subgroup is normal since $\mathbb{Z}$ is abelian. [cite: 52] The congruence classes mod $n$ are the cosets of the subgroup $n\mathbb{Z}$ in $\mathbb{Z}$. [cite: 52] Using abelian notation for cosets, we write [cite: 56]
+$$[a]_n = a + (n\mathbb{Z}).$$
+We see clearly that the operation defined on $\mathbb{Z}_n$ matches precisely the one defined above for quotient groups
+
+\subsection*{Theorem 4.12}
+Let $H$ be a normal subgroup of a group $G$.Then for every group homomorphism $\varphi: G \to G'$ such that $H \subseteq \ker \varphi$, there exists a unique group homomorphism
+$$\tilde{\varphi}: G/H \to G'$$
+so that the diagram commutes.
+
+\subsection*{Kernel is normal}
+If $H$ is a normal subgroup, we have now constructed in great detail a group $G/H$ and a surjective homomorphism $\pi: G \to G/H$. What is the kernel of $\pi$? The identity of $G/H$ is the coset $H$, which is $H$ itself. [cite: 81, 82] So
+$$\ker \pi = \{g \in G \mid gH = H\} = H. $$
+Previously, we learnt that every kernel is a normal subgroup and now we have verified that every normal subgroup is in fact a kernel (of some group homomorphism).
+
+\subsection*{Canonical Decomposition}
+Injective and surjective maps are so useful because they serve as the building bricks to build any function between two sets. Every set function may be viewed as the composition of a surjective map, followed by a bijective map, followed by an injective map. [cite: 93] We apply this result to groups and group homomorphisms.
+
+\subsection*{Theorem 5.1}
+Every group homomorphism $\varphi: G \to G'$ may be decomposed as follows: [cite: 96, 97, 102]
+$$G \xrightarrow{proj} G/\ker \varphi \xrightarrow{\cong} \text{im } \varphi \xrightarrow{incl} G' \text{ [cite: 100, 103, 104, 106, 108]}$$
+where the isomorphism in the middle is the homomorphism induced by $\varphi$ (as in Theorem 4.12). [cite: 109]
+
+Theorem 5.1 makes one aware that to any group homomorphism $\varphi: G \to G'$, it can immediately be seen that $\frac{G}{\ker \varphi}$ identifies with a subgroup of $G'$. [cite: 110, 111, 116]
+
+\subsection*{Corollary 5.2}
+Suppose $\varphi: G \to G'$ is a surjective group homomorphism. [cite: 117, 118, 121] Then
+$$G' \cong \frac{G}{\ker \varphi} \text{ [cite: 120]}$$
+
+\textbf{Proof} \\
+From Theorem 5.1, $\text{im } \varphi = G'$ since $\varphi$ is surjective and so the result holds. [cite: 122]
+
+\subsection*{Example 5.3}
+The cyclic group $C_3$ may be viewed as a subgroup of the dihedral group $D_6$ (the rotations of a triangle give a copy of $C_3$ inside $D_6$). [cite: 123, 124, 125, 128] Then $C_3$ is normal in $D_6$, and [cite: 126]
+$$\frac{D_6}{C_3} \cong C_2. \text{ [cite: 127]}$$
+We can check this by hand, noting that there is a surjective group hom. $D_6 \to C_2$ whose kernel is $C_3$: [cite: 129, 130] send an element $\sigma \in D_6$ to the identity in $C_2$ if it does not flip the triangle (this is exactly the case when $\sigma \in C_3$), and send the element to the other element in $C_2$ if it does. [cite: 130] Then by Corollary 5.2 we obtain the desired results. [cite: 131]
+
+\subsection*{Subgroups of Quotients}
+The lattice of subgroups of a quotient $G/H$ can be described explicitly in terms of the lattice of subgroups of the group $G$: [cite: 132, 133, 134] keep the part of the lattice of subgroups of $G$ corresponding to subgroups which contain $H$. [cite: 134]
+
+\subsection*{Example 5.4}
+We demonstrate the effect of this operation on the lattice of subgroups of $C_{12} \cong \mathbb{Z}/12\mathbb{Z}$ (labeled by generators) after quotienting by $H = \langle [6] \rangle \cong C_2$: [cite: 135, 136, 137]
+
+The result matches the lattice of subgroups of $C_6 \cong C_{12}/C_2$.
+Note: As an exercise show that if $H \subseteq K$ are subgroups of a group $G$ and $H$ is normal in $G$, then $H$ is normal in $K$. [cite: 147]
+
+\subsection*{Proposition 5.5}
+Let $H$ be a normal subgroup of a group $G$.  Then for every subgroup $K$ of $G$ containing $H$, $K/H$ may be identified with a subgroup of $G/H$. [cite: 148] The function
+$$\alpha: \{\text{subgroups } K \text{ of } G \text{ containing } H\} \to \{\text{subgroups of } G/H\} \text{ [cite: 150]}$$
+defined by $\alpha(K) = K/H$ is a bijection preserving inclusions.
+
+\textbf{Proof} \\
+The group $K/H$ consists of the cosets $aH \in G/H$ with $a \in K$, and in this way it is a subset (and obviously a subgroup) of $G/H$. [cite: 152, 155] It is also true that if $H \subseteq K \subseteq L$ then $\alpha(K) = K/H \subseteq L/H = \alpha(L)$; [cite: 155] and so $\alpha$ preserves inclusions. [cite: 156] Next we verify that $\alpha$ is a bijection and to do this it suffices to write down an inverse function [cite: 157]
+$$\beta: \{\text{subgroups of } G/H\} \to \{\text{subgroups } K \text{ of } G \text{ containing } H\}. \text{ [cite: 161]}$$
+Let $K'$ be a subgroup of $G/H$;  define $\beta(K')$ to be the subset of $G$: [cite: 162]
+$$K := \pi^{-1}(K') = \{a \in G \mid aH \in K'\}. $$
+where $\pi: G \to G/H$ is the canonical projection.  Then $K$ is a subgroup of $G$ and contains $H$ since $H = \pi^{-1}(e)$ and $e \in K'$. [cite: 165, 166] Next we show that $\alpha$ and $\beta$ are inverses of each other. [cite: 167, 170, 171] Indeed
+$$\beta(K/H) = \pi^{-1}(K/H) = \{a \in G \mid \pi(a) \in K/H\} = \{a \in G \mid aH \in K/H\} = \{a \in G \mid a \in K\} = K. $$
+So $(\beta \circ \alpha)(K) = K$.On the other hand taking $\beta(K') = K$, [cite: 177]
+$$\alpha(K) = K/H = \pi(K) = \pi(\pi^{-1}(K')) = K'. \text{ [cite: 178]}$$
+Thus $(\alpha \circ \beta)(K') = K'$.
+
+The correspondence preserves normal subgroups. The following statement is usually known as the third isomorphism theorem: [cite: 179, 180]
+
+\subsection*{Proposition 5.6}
+Let $H$ be a normal subgroup of $G$ and let $N$ be a subgroup of $G$ containing $H$. [cite: 181, 183] Then $N/H$ is normal in $G/H$ if and only if $N$ is normal in $G$, and in this case [cite: 184, 185]
+$$\frac{G/H}{N/H} \cong \frac{G}{N}.$$
+
+\textbf{Proof} \\
+If $N$ is normal, then consider the projection $\pi: G \to G/N$. [cite: 187, 188] The subgroup $H$ is contained in $N$, which is the kernel of this homomorphism, [cite: 190] so we obtain by Theorem 4.12 an induced homomorphism $\mu: G/H \to G/N$. [cite: 191, 194]
+$$\ker \mu = \{gH \in G/H \mid \mu(gH) = N\} = \{gH \in G/H \mid gN = N\} = \{gH \in G/H \mid g \in N\} = N/H. \text{ [cite: 199, 200, 201]}$$
+The subgroup $N/H$ of $G/H$ is the kernel of this homomorphism; therefore it is normal. [cite: 202] Conversely, if $N/H$ is normal in $G/H$, consider the composition [cite: 203, 205]
+$$G \xrightarrow{\pi} G/H \xrightarrow{\tilde{\pi}} \frac{G/H}{N/H}. \text{ [cite: 207]}$$
+The kernel of this homomorphism [cite: 208]
+$$\ker (\tilde{\pi} \circ \pi) = \{g \in G \mid \tilde{\pi}(\pi(g)) = N/H\} = \{g \in G \mid \tilde{\pi}(gH) = N/H\} = \{g \in G \mid gH \in N/H\} = \{g \in G \mid g \in N\} = N. \text{ [cite: 209, 210]}$$
+Furthermore, this homomorphism is surjective; hence the stated isomorphism $\frac{G/H}{N/H} \cong G/N$ follows from Corollary 5.2. [cite: 211, 212]
+
+\subsection*{$HK/H$ and $K/(H \cap K)$}
+In the previous section, we dealt with two nested subgroups $H \subseteq K$ of a group $G$. [cite: 213, 214, 215] We will now consider the case when two subgroups, $H$ and $K$, are not nested. [cite: 216, 220] If $H$ and $K$ are two subgroups of a group $G$, [cite: 221] then
+$$HK = \{hk \mid h \in H, k \in K\} \text{ [cite: 222]}$$
+is a subset. [cite: 223] Whenever $G$ is commutative, then $HK$ is a subgroup of $G$. [cite: 223, 224, 227] Another instance where $HK$ is a subgroup is when one of the subgroups is normal. [cite: 228, 229] The following is usually called the second isomorphism theorem. [cite: 229, 230]
+
+\subsection*{Proposition 5.7}
+Let $H$ and $K$ be subgroups of a group $G$, and assume that $H$ is normal in $G$. [cite: 231, 232, 233] Then
+\begin{enumerate}
+    \item $HK$ is a subgroup of $G$, and $H$ is normal in $HK$; [cite: 235, 236]
+    \item $H \cap K$ is normal in $K$, and [cite: 238]
+    $$\frac{HK}{H} \cong \frac{K}{H \cap K}. \text{ [cite: 239]}$$
+\end{enumerate}
+
+\textbf{Proof} \\
+To verify that $HK$ is a subgroup of $G$ when $H$ is normal, note that $HK$ is the union of all cosets $Hk$, with $k \in K$; that is, ... [cite: 244, 245, 246, 247]

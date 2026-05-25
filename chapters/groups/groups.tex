@@ -1,0 +1,208 @@
+
+
+\section*{Groups} % [cite: 1]
+
+\textbf{Definition 1.1:} Let $G$ be a non-empty set, equipped with a binary operation, that is, a "multiplication" map % [cite: 2]
+$$ \boldsymbol{\cdot} : G \times G \longrightarrow G$$ % [cite: 3]
+Our notations will be % [cite: 4]
+$$ \boldsymbol{\cdot} \, (g,h) =: g \bullet h$$ % [cite: 5]
+or simply $gh$ if the name of the operation can be understood. % [cite: 6]
+
+\textbf{Definition 1.2:} A set $G$, endowed with a binary operation $( \cdot ) \, (ie (G,\cdot)) $, is a group if: % [cite: 7, 8, 9]
+\begin{enumerate}
+    \item[i)] the operation is associative, that is % [cite: 10, 11]
+    $$(\forall g,h,k \in G) \quad (g \cdot h) \cdot k = g \cdot (h \cdot k);$$ % [cite: 12]
+    \item[ii)] there exists an identity element $e_G$ for $G$, that is % [cite: 13, 14, 15, 16, 17, 18]
+    $$(\exists e_G \in G)(\forall g \in G): g \cdot e_G = g = e_G \cdot g;$$ % [cite: 19]
+    \item[iii)] every element in $G$ has an inverse with respect to $\cdot$, that is, % [cite: 20]
+    $$(\forall g \in G)(\exists h \in G): g \cdot h = e_G = h \cdot g.$$ % [cite: 20]
+\end{enumerate}
+
+\textbf{Example 1.3} % [cite: 21]
+The trivial group $G = \{e\}$. % [cite: 22]
+
+\textbf{Example 1.4} % [cite: 23]
+The following are groups under ordinary addition: $(\mathbb{Z}, +), (\mathbb{Q}, +), (\mathbb{R}, +), (\mathbb{C}, +)$. % [cite: 24, 25]
+The subset $\{+1, -1\}$ of $\mathbb{Z}$ is a group under multiplication. % [cite: 26]
+\\Note that the above examples are commutative \\
+\textbf{Example 1.5} % [cite: 30]
+Consider the set of all $n \times n$ matrices with real entries. % [cite: 31, 33]
+Under ordinary matrix multiplication, these form a group. % [cite: 34]
+This is an example of a non-commutative group. This is denoted by $GL_n(\mathbb{R})$ % [cite: 35, 36, 37]
+
+\subsection*{Commutative groups} % [cite: 38]
+
+Given a group $(G, \cdot)$ such that $(\forall g, h \in G)$ $g \cdot h = h \cdot g$, we say that the operation is commutative. % [cite: 39, 40]
+We say that two elements $g, h$ "commute" if $gh = hg$. % [cite: 41]
+In a commutative group, any two elements commute. Such groups are said to be abelian groups. % [cite: 42]
+
+The notation used in treating abelian groups differs from that used for standard groups. % [cite: 43]
+The operation in an abelian group $A$ is, as a rule, denoted by $+$ and is called addition. % [cite: 44, 45]
+The identity is called $0_A$ and the inverse of an element $a \in A$ is denoted by $-a$. % [cite: 46, 48]
+
+Now in a standard group setting, the conventional power notation can be used $g^0 = e_G$ and for a positive integer $n$: % [cite: 47, 49, 50]
+$$g^n = g \cdots g \quad \text{($n$-times)}$$ % [cite: 51, 52, 53]
+$$g^{-n} = g^{-1} \cdots g^{-1} \quad \text{($n$-times)}$$ % [cite: 54]
+
+On the other hand, in the abelian group setting the power notation is replaced by 'multiple' $0a = 0$ and for a positive integer $n$: % [cite: 55, 56, 57, 58]
+$$na = a + a + \cdots + a \quad \text{($n$-times)}$$ % [cite: 59]
+$$(-n)a = (-a) + \cdots + (-a) \quad \text{($n$-times)}$$ % [cite: 59]
+
+\subsection*{Order} % [cite: 61]
+
+\textbf{Definition 1.6:} An element $g$ of a group $G$ has finite order if $g^n = e$ for some positive integer $n$. % [cite: 62]
+In this case, the order $|g|$ is \underline{the smallest positive} $n$ such that $g^n = e$. % [cite: 62, 63, 67]
+If $g$ does not have finite order, then $|g| = \infty$. % [cite: 65, 69, 70]
+By definition, if $g^n = e$ for some positive integer $n$, then $|g| \le n$. % [cite: 71, 72]
+
+\textbf{Lemma 1.7:} If $g^n = e$ for some integer $n$, then $|g|$ is a divisor of $n$. % [cite: 75]
+
+\textbf{Proof:} By definition of order, $n \ge |g|$, that is $n - |g| \ge 0$. % [cite: 76, 78, 80, 82]
+Thus by the division algorithm $\exists 0 \le r < |g| , m \in \mathbb{Z}$ such that $n = |g| \cdot m +  r.$ So that $ r = n - |g|\cdot m \ge 0$. % [cite: 81, 83, 84]
+Note that % [cite: 85]
+$$g^r = g^{n - |g| \cdot m} = g^n \cdot (g^{|g|})^{-m} = e \cdot e^{-m} = e$$ % [cite: 86]
+By definition of order, $|g|$ is the smallest positive integer such that $g^{|g|} = e$. % [cite: 87]
+Since $r$ is smaller than $|g|$ and $g^r = e$, $r$ cannot be positive, hence $r = 0$ necessarily. % [cite: 88, 89, 90]
+So that $0 = n - |g| \cdot m$. % [cite: 91, 92]
+Thus we have $n = |g| \cdot m$, proving that $n$ is indeed an integer multiple of $|g|$ as claimed. % [cite: 93, 94, 95, 96, 97]
+
+\textbf{Corollary 1.8:} Let $g$ be an element of finite order, and let $N \in \mathbb{Z}$. % [cite: 100, 101, 104]
+Then $g^N = e \iff N \text{ is a multiple of } |g|$. % [cite: 105]
+
+\textbf{Definition 1.9:} If $G$ is finite as a set, its order $|G|$ is the number of its elements; we write $|G| = \infty$ if $G$ is infinite. % [cite: 106, 107, 111, 112]
+note that $|g| \le |G| \forall g \in \mathbb{G}$. Indeed, this is a vacuosly true if $|G| = \infty$, if G is finite, cosider the $|G| + 1$ powers
+$$g^0 = e, g,g^2,g^3, ..., g^{|G|}$$ of g. These cannot all be distinct, hence $(\exists i,j) 0 \le i < j \le |G|$ such that $g^i = g^j$
+By Cancellations(That is multiplying on  the right by $g^-i$)
+$$g^{j-i} = e,$$
+Showing $|g| \le (j-1) \le |G|$
+
+\textbf{Proposition 1.10:} Let $g \in G$ be an element of finite order. Then $g^m$ has finite order $\forall m \ge 0$ and % [cite: 122, 123, 124, 125]
+$$|g^m| = \frac{\text{lcm}(m, |g|)}{m} = \frac{|g|}{\gcd(m, |g|)}$$ % [cite: 126]
+
+\textbf{Proof:} The equality of the tow numbers $\frac{\text{lcm}(m, |g|)}{m}$ and $\frac{|g|}{\gcd(m, |g|)}$ follows from the elementary properties of gcd and lcm:
+$$lem(a,b) =  \frac{\text{ab}}{gcd(a,b)} \forall a \, and \, b$$
+We need only to prove that $|g^m| = \frac{lcm(m,|g|)}{m}$
+The oder of $g^m$ is the least positive integer d such that $g^{md} = e$, that is md is a multple of $|g|$(by corrollary 1.8)
+In other words $m | g^m$ is the smallest multiple of m with is also a multiple of $|g|$: $m | g^m = lcm(m,|g|)$.Thus
+$$\frac{lcm(m,|g|)}{m} = |g^m|$$ The rest of the reslts follows immediately. In general for commuting elemtents,
+
+\textbf{Proposition 1.11:} If $gh = hg$, then $|gh|$ divides $\text{lcm}(|g|, |h|)$. % [cite: 148]
+
+\section*{Symmetric Groups} % [cite: 206]
+
+\textbf{Definition1.12:} A permutation of a set $A$ is a bijective map $A \to A$. % [cite: 207]
+
+\textbf{Definition1.13:} Let $A$ be a set. The symmetric group or group of permutations of $A$, denoted $S_A$, is the group of all bijective maps from $A$ to itself under composition. % [cite: 208, 210]
+
+The group of permutations of the set $\{1, 2, \ldots, n\}$ is denoted by $S_n$. % [cite: 211]
+The groups $S_n$ are finitely very large—for example if $A = \{1, \ldots, n\}$ then $|S_n| = n!$. % [cite: 213, 215]
+
+\textbf{Notation:} We will indicate an element $\sigma \in S_n$ by listing the effect of applying $\sigma$ underneath the list $1, \ldots, n$ as a matrix. % [cite: 228, 229, 230, 231, 233]
+Thus the elements $e, f$ in $S_2$ may be denoted by: % [cite: 235]
+$$e = \begin{pmatrix} 1 & 2 \\ 1 & 2 \end{pmatrix}, \quad f = \begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix}$$ % [cite: 236]
+
+Using the same notation, $S_3$ consists of
+$$ \left\{ \begin{pmatrix} 1 & 2 & 3 \\ 1 & 2 & 3 \end{pmatrix}, \begin{pmatrix} 1 & 2 & 3 \\ 2 & 1 & 3 \end{pmatrix}, \begin{pmatrix} 1 & 2 & 3 \\ 3 & 2 & 1 \end{pmatrix}, \begin{pmatrix} 1 & 2 & 3 \\ 1 & 3 & 2 \end{pmatrix}, \begin{pmatrix} 1 & 2 & 3 \\ 3 & 1 & 2 \end{pmatrix}, \begin{pmatrix} 1 & 2 & 3 \\ 2 & 3 & 1 \end{pmatrix} \right\} $$
+
+The following describes how any two permutations are multiplied. For example:
+$$ \begin{pmatrix} 1 & 2 & 3 \\ 2 & 1 & 3 \end{pmatrix} \begin{pmatrix} 1 & 2 & 3 \\ 3 & 2 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 2 & 3 \\ 3 & 1 & 2 \end{pmatrix} $$
+We obtain the answer by tracing where each element maps: 1 maps to 3, and then 3 maps to 3. So the product sends 1 to 3. Continuing in this fashion we obtain the desired result.
+
+\subsection*{Dihedral groups}
+A symmetry is a transformation which preserves a structure. The symmetries will naturally form groups. One context in which this notion may be visualised clearly is that of 'geometric figures' such as polygons in the plane.
+
+The dihedral groups may be defined as these groups of symmetries for the regular polygons. Placing the polygon so that it is centered at the origin (thereby excluding translations as possible symmetries), we see that the dihedral group for a regular $n$-sided polygon consists of the $n$ rotations by $2\pi/n$ radians about the midpoint, and $n$ distinct reflections about lines through the origin and a vertex or a midpoint of a side. Thus the dihedral group for a regular $n$-sided polygon consists of $2n$ elements. We will denote this group by $D_{2n}$.
+
+There is a way to relate dihedral groups to symmetric groups by considering the fact that a symmetry of a regular polygon is determined by what happens to its vertices. Label the vertices of an equilateral triangle by $1, 2, 3$. Then a counterclockwise rotation by an angle of $2\pi/3$ sends 1 to 2, 2 to 3, and 3 to 1. We associate to it the permutation:
+$$ \begin{pmatrix} 1 & 2 & 3 \\ 2 & 3 & 1 \end{pmatrix} \in S_3 $$
+Such a labeling defines a function $D_6 \longrightarrow S_3$ which is a group homomorphism, and in addition this function is injective. We can think of this as a faithful action of $D_6$ on the set of vertices.
+
+\section*{Cyclic groups and Modular arithmetic}
+Let $n$ be a positive integer. Consider the equivalence relation defined by ($a, b \in \mathbb{Z}$):
+$$ a \equiv b \pmod n \iff n | (b - a) $$
+This is called congruence modulo $n$.
+The set of equivalence classes is often denoted by $\mathbb{Z}_n$, $\mathbb{Z}/(n)$, or $\mathbb{Z}/n\mathbb{Z}$.
+When we write $[a]_n$ we mean the equivalence class of the integer $a$ modulo $n$, or simply $[a]$ if no ambiguity arises.
+
+\textbf{Lemma 1.13:} If $a \equiv a' \pmod n$ and $b \equiv b' \pmod n$, then
+$$ a + b \equiv a' + b' \pmod n $$
+\textbf{Proof:} By hypothesis $n | (a' - a)$ and $n | (b' - b)$; therefore $\exists k, l \in \mathbb{Z}$ such that
+$$ (a' - a) = kn, \quad (b' - b) = ln $$
+Then
+$$ (a' + b') - (a + b) = (a' - a) + (b' - b) = kn + ln = (k + l)n $$
+Proving that $n$ divides $(a' + b') - (a + b)$ as needed.
+
+Thus we have a binary operation $+$ on $\mathbb{Z}/n\mathbb{Z}$. Next we check that the resulting structure is a group. Associativity is inherited from $\mathbb{Z}$. Similarly, the identity is $[0]_n$ and the inverse is $-[a]_n = [-a]_n$. It is immediately checked that the resulting groups $\mathbb{Z}/n\mathbb{Z}$ are commutative.
+
+\textbf{Proposition 1.14:} The order of $[m]_n$ in $\mathbb{Z}_n$ is $1$ if $n|m$, and more generally
+$$ |[m]_n| = \frac{n}{\gcd(m,n)} $$
+
+\textbf{Corollary 1.16:} The class $[m]_n$ generates $\mathbb{Z}_n$ if and only if $\gcd(m,n) = 1$.
+A consequence of the above result is that if $n=p$ is a prime integer, then every non-zero class in the group $\mathbb{Z}_p$ generates it.
+
+Note that there is a well-defined multiplication on $\mathbb{Z}_n$ given by $[a]_n \cdot [b]_n = [ab]_n$. However, this operation does not define a group structure on $\mathbb{Z}_n$; indeed, the class $[0]_n$ does not have a multiplicative inverse.
+For any positive integer $n$, denote by $(\mathbb{Z}_n)^*$ the subset of $\mathbb{Z}_n$ consisting of classes $[m]_n$ such that $\gcd(m,n) = 1$:
+$$ (\mathbb{Z}_n)^* := \{ [m]_n \in \mathbb{Z}_n \mid \gcd(m,n) = 1 \} $$
+
+\textbf{Proposition 1.17:} Multiplication makes $(\mathbb{Z}_n)^*$ into a group.
+
+\section*{Group Homomorphisms}
+
+Let $(G, \cdot_G)$ and $(H, \cdot_H)$ be two groups.
+
+\textbf{Definition 2.1:} A map $\varphi : G \to H$ is a group homomorphism if $\forall a, b \in G$,
+$$ \varphi(a \cdot_G b) = \varphi(a) \cdot_H \varphi(b) $$
+In other words, $\varphi$ is a homomorphism if it 'preserves the structure'.
+
+\textbf{Proposition 2.2:} Let $\varphi : G \to H$ be a group homomorphism. Then
+\begin{enumerate}
+    \item $\varphi(e_G) = e_H$
+    \item $\forall g \in G, \varphi(g^{-1}) = \varphi(g)^{-1}$
+\end{enumerate}
+
+\textbf{Proof:}
+\begin{enumerate}
+    \item To prove the first item, we make use of the cancellation property and the definition of homomorphism. Since $e_G = e_G \cdot e_G$,
+    $$ \varphi(e_G) = \varphi(e_G \cdot e_G) = \varphi(e_G) \cdot \varphi(e_G) $$
+    which implies $e_H = \varphi(e_G)$ by cancelling $\varphi(e_G)$ in $H$.
+    \item $\varphi(g^{-1}) \cdot \varphi(g) = \varphi(g^{-1} \cdot g) = \varphi(e_G) = e_H = \varphi(g)^{-1} \cdot \varphi(g)$
+    Thus $\varphi(g^{-1}) = \varphi(g)^{-1}$ by cancellation.
+\end{enumerate}
+
+\subsection*{Examples of group homomorphisms}
+1. Given any two groups $G, H$, we can define a homomorphism $G \to H$ by sending every element of $G$ to the identity $e_H$ of $H$. We call this map the trivial morphism.
+
+2. The exponential function is a homomorphism from $(\mathbb{R}, +)$ to the group $(\mathbb{R}^{>0}, \cdot)$ of positive real numbers, with ordinary multiplication as operation. Indeed, $e^{a+b} = e^a e^b$.
+
+\textbf{Proposition 2.3:} Let $\varphi : G \to H$ be a group homomorphism, and let $g \in G$ be an element of finite order. Then $|\varphi(g)|$ divides $|g|$.
+
+\subsection*{Isomorphisms}
+\textbf{Definition 2.8:} Two groups $G, H$ are isomorphic if there is a bijective group homomorphism $\varphi : G \to H$. We write $G \cong H$.
+
+\textbf{Proposition 2.5:} Let $\varphi : G \to H$ be a group homomorphism. Then $\varphi$ is an isomorphism of groups if and only if it is a bijection.
+
+\textbf{Definition 2.9:} A group $G$ is cyclic if it is isomorphic to $\mathbb{Z}$ or to $\mathbb{Z}_n$ for some $n$.
+
+\section*{Subgroups}
+
+\textbf{Definition 3.1:} Let $(G, \cdot)$ be a group. A subgroup $(H, \cdot)$ of $G$ is a non-empty subset $H$ which is also a group under the binary operation of $G$.
+
+\textbf{Proposition 3.2:} A non-empty subset $H$ of a group $G$ is a subgroup if and only if
+$$ \forall (a, b \in H) : ab^{-1} \in H $$
+
+\textbf{Lemma 3.3:} If $\{H_\alpha\}_{\alpha \in A}$ is any family of subgroups of a group $G$, then
+$$ H = \bigcap_{\alpha \in A} H_\alpha $$
+is a subgroup of $G$.
+
+\textbf{Lemma 3.4:} Let $\varphi : G \to G'$ be a group homomorphism, and let $H'$ be a subgroup of $G'$. Then $\varphi^{-1}(H')$ is a subgroup of $G$.
+
+\textbf{Definition 3.5 (Kernel and Image):}
+Every group homomorphism $\varphi : G \to G'$ determines two interesting subgroups:
+\begin{itemize}
+    \item the kernel of $\varphi$, $\ker \varphi \subseteq G$; and
+    \item the image of $\varphi$, $\text{im } \varphi \subseteq G'$.
+\end{itemize}
+The kernel of $\varphi$ is the subset of $G$ consisting of elements mapping to the identity in $G'$:
+$$ \ker \varphi := \{ g \in G \mid \varphi(g) = e_{G'} \} = \varphi^{-1}(\{e_{G'}\}) $$
+
+\textbf{Definition 3.6:} A group $G$ is finitely generated if there exists a finite subset $A \subseteq G$ such that $G = \langle A \rangle$.

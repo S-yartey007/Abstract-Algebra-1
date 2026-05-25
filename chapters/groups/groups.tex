@@ -1,83 +1,83 @@
 
 
-\section*{Groups} % [cite: 1]
+\section*{Groups} % []
 
-\textbf{Definition 1.1:} Let $G$ be a non-empty set, equipped with a binary operation, that is, a "multiplication" map % [cite: 2]
-$$ \boldsymbol{\cdot} : G \times G \longrightarrow G$$ % [cite: 3]
-Our notations will be % [cite: 4]
-$$ \boldsymbol{\cdot} \, (g,h) =: g \bullet h$$ % [cite: 5]
-or simply $gh$ if the name of the operation can be understood. % [cite: 6]
+\textbf{Definition 1.1:} Let $G$ be a non-empty set, equipped with a binary operation, that is, a "multiplication" map % []
+$$ \boldsymbol{\cdot} : G \times G \longrightarrow G$$ % []
+Our notations will be % []
+$$ \boldsymbol{\cdot} \, (g,h) =: g \bullet h$$ % []
+or simply $gh$ if the name of the operation can be understood. % []
 
-\textbf{Definition 1.2:} A set $G$, endowed with a binary operation $( \cdot ) \, (ie (G,\cdot)) $, is a group if: % [cite: 7, 8, 9]
+\textbf{Definition 1.2:} A set $G$, endowed with a binary operation $( \cdot ) \, (ie (G,\cdot)) $, is a group if: % [, 8, 9]
 \begin{enumerate}
-    \item[i)] the operation is associative, that is % [cite: 10, 11]
-    $$(\forall g,h,k \in G) \quad (g \cdot h) \cdot k = g \cdot (h \cdot k);$$ % [cite: 12]
-    \item[ii)] there exists an identity element $e_G$ for $G$, that is % [cite: 13, 14, 15, 16, 17, 18]
-    $$(\exists e_G \in G)(\forall g \in G): g \cdot e_G = g = e_G \cdot g;$$ % [cite: 19]
-    \item[iii)] every element in $G$ has an inverse with respect to $\cdot$, that is, % [cite: 20]
-    $$(\forall g \in G)(\exists h \in G): g \cdot h = e_G = h \cdot g.$$ % [cite: 20]
+    \item[i)] the operation is associative, that is % [0, 11]
+    $$(\forall g,h,k \in G) \quad (g \cdot h) \cdot k = g \cdot (h \cdot k);$$ % [2]
+    \item[ii)] there exists an identity element $e_G$ for $G$, that is % [3, 14, 15, 16, 17, 18]
+    $$(\exists e_G \in G)(\forall g \in G): g \cdot e_G = g = e_G \cdot g;$$ % [9]
+    \item[iii)] every element in $G$ has an inverse with respect to $\cdot$, that is, % [0]
+    $$(\forall g \in G)(\exists h \in G): g \cdot h = e_G = h \cdot g.$$ % [0]
 \end{enumerate}
 
-\textbf{Example 1.3} % [cite: 21]
-The trivial group $G = \{e\}$. % [cite: 22]
+\textbf{Example 1.3} % [1]
+The trivial group $G = \{e\}$. % [2]
 
-\textbf{Example 1.4} % [cite: 23]
-The following are groups under ordinary addition: $(\mathbb{Z}, +), (\mathbb{Q}, +), (\mathbb{R}, +), (\mathbb{C}, +)$. % [cite: 24, 25]
-The subset $\{+1, -1\}$ of $\mathbb{Z}$ is a group under multiplication. % [cite: 26]
+\textbf{Example 1.4} % [3]
+The following are groups under ordinary addition: $(\mathbb{Z}, +), (\mathbb{Q}, +), (\mathbb{R}, +), (\mathbb{C}, +)$. % [4, 25]
+The subset $\{+1, -1\}$ of $\mathbb{Z}$ is a group under multiplication. % [6]
 \\Note that the above examples are commutative \\
-\textbf{Example 1.5} % [cite: 30]
-Consider the set of all $n \times n$ matrices with real entries. % [cite: 31, 33]
-Under ordinary matrix multiplication, these form a group. % [cite: 34]
-This is an example of a non-commutative group. This is denoted by $GL_n(\mathbb{R})$ % [cite: 35, 36, 37]
+\textbf{Example 1.5} % [0]
+Consider the set of all $n \times n$ matrices with real entries. % [1, 33]
+Under ordinary matrix multiplication, these form a group. % [4]
+This is an example of a non-commutative group. This is denoted by $GL_n(\mathbb{R})$ % [5, 36, 37]
 
-\subsection*{Commutative groups} % [cite: 38]
+\subsection*{Commutative groups} % [8]
 
-Given a group $(G, \cdot)$ such that $(\forall g, h \in G)$ $g \cdot h = h \cdot g$, we say that the operation is commutative. % [cite: 39, 40]
-We say that two elements $g, h$ "commute" if $gh = hg$. % [cite: 41]
-In a commutative group, any two elements commute. Such groups are said to be abelian groups. % [cite: 42]
+Given a group $(G, \cdot)$ such that $(\forall g, h \in G)$ $g \cdot h = h \cdot g$, we say that the operation is commutative. % [9, 40]
+We say that two elements $g, h$ "commute" if $gh = hg$. % [1]
+In a commutative group, any two elements commute. Such groups are said to be abelian groups. % [2]
 
-The notation used in treating abelian groups differs from that used for standard groups. % [cite: 43]
-The operation in an abelian group $A$ is, as a rule, denoted by $+$ and is called addition. % [cite: 44, 45]
-The identity is called $0_A$ and the inverse of an element $a \in A$ is denoted by $-a$. % [cite: 46, 48]
+The notation used in treating abelian groups differs from that used for standard groups. % [3]
+The operation in an abelian group $A$ is, as a rule, denoted by $+$ and is called addition. % [4, 45]
+The identity is called $0_A$ and the inverse of an element $a \in A$ is denoted by $-a$. % [6, 48]
 
-Now in a standard group setting, the conventional power notation can be used $g^0 = e_G$ and for a positive integer $n$: % [cite: 47, 49, 50]
-$$g^n = g \cdots g \quad \text{($n$-times)}$$ % [cite: 51, 52, 53]
-$$g^{-n} = g^{-1} \cdots g^{-1} \quad \text{($n$-times)}$$ % [cite: 54]
+Now in a standard group setting, the conventional power notation can be used $g^0 = e_G$ and for a positive integer $n$: % [7, 49, 50]
+$$g^n = g \cdots g \quad \text{($n$-times)}$$ % [1, 52, 53]
+$$g^{-n} = g^{-1} \cdots g^{-1} \quad \text{($n$-times)}$$ % [4]
 
-On the other hand, in the abelian group setting the power notation is replaced by 'multiple' $0a = 0$ and for a positive integer $n$: % [cite: 55, 56, 57, 58]
-$$na = a + a + \cdots + a \quad \text{($n$-times)}$$ % [cite: 59]
-$$(-n)a = (-a) + \cdots + (-a) \quad \text{($n$-times)}$$ % [cite: 59]
+On the other hand, in the abelian group setting the power notation is replaced by 'multiple' $0a = 0$ and for a positive integer $n$: % [5, 56, 57, 58]
+$$na = a + a + \cdots + a \quad \text{($n$-times)}$$ % [9]
+$$(-n)a = (-a) + \cdots + (-a) \quad \text{($n$-times)}$$ % [9]
 
-\subsection*{Order} % [cite: 61]
+\subsection*{Order} % [1]
 
-\textbf{Definition 1.6:} An element $g$ of a group $G$ has finite order if $g^n = e$ for some positive integer $n$. % [cite: 62]
-In this case, the order $|g|$ is \underline{the smallest positive} $n$ such that $g^n = e$. % [cite: 62, 63, 67]
-If $g$ does not have finite order, then $|g| = \infty$. % [cite: 65, 69, 70]
-By definition, if $g^n = e$ for some positive integer $n$, then $|g| \le n$. % [cite: 71, 72]
+\textbf{Definition 1.6:} An element $g$ of a group $G$ has finite order if $g^n = e$ for some positive integer $n$. % [2]
+In this case, the order $|g|$ is \underline{the smallest positive} $n$ such that $g^n = e$. % [2, 63, 67]
+If $g$ does not have finite order, then $|g| = \infty$. % [5, 69, 70]
+By definition, if $g^n = e$ for some positive integer $n$, then $|g| \le n$. % [1, 72]
 
-\textbf{Lemma 1.7:} If $g^n = e$ for some integer $n$, then $|g|$ is a divisor of $n$. % [cite: 75]
+\textbf{Lemma 1.7:} If $g^n = e$ for some integer $n$, then $|g|$ is a divisor of $n$. % [5]
 
-\textbf{Proof:} By definition of order, $n \ge |g|$, that is $n - |g| \ge 0$. % [cite: 76, 78, 80, 82]
-Thus by the division algorithm $\exists 0 \le r < |g| , m \in \mathbb{Z}$ such that $n = |g| \cdot m +  r.$ So that $ r = n - |g|\cdot m \ge 0$. % [cite: 81, 83, 84]
-Note that % [cite: 85]
-$$g^r = g^{n - |g| \cdot m} = g^n \cdot (g^{|g|})^{-m} = e \cdot e^{-m} = e$$ % [cite: 86]
-By definition of order, $|g|$ is the smallest positive integer such that $g^{|g|} = e$. % [cite: 87]
-Since $r$ is smaller than $|g|$ and $g^r = e$, $r$ cannot be positive, hence $r = 0$ necessarily. % [cite: 88, 89, 90]
-So that $0 = n - |g| \cdot m$. % [cite: 91, 92]
-Thus we have $n = |g| \cdot m$, proving that $n$ is indeed an integer multiple of $|g|$ as claimed. % [cite: 93, 94, 95, 96, 97]
+\textbf{Proof:} By definition of order, $n \ge |g|$, that is $n - |g| \ge 0$. % [6, 78, 80, 82]
+Thus by the division algorithm $\exists 0 \le r < |g| , m \in \mathbb{Z}$ such that $n = |g| \cdot m +  r.$ So that $ r = n - |g|\cdot m \ge 0$. % [1, 83, 84]
+Note that % [5]
+$$g^r = g^{n - |g| \cdot m} = g^n \cdot (g^{|g|})^{-m} = e \cdot e^{-m} = e$$ % [6]
+By definition of order, $|g|$ is the smallest positive integer such that $g^{|g|} = e$. % [7]
+Since $r$ is smaller than $|g|$ and $g^r = e$, $r$ cannot be positive, hence $r = 0$ necessarily. % [8, 89, 90]
+So that $0 = n - |g| \cdot m$. % [1, 92]
+Thus we have $n = |g| \cdot m$, proving that $n$ is indeed an integer multiple of $|g|$ as claimed. % [3, 94, 95, 96, 97]
 
-\textbf{Corollary 1.8:} Let $g$ be an element of finite order, and let $N \in \mathbb{Z}$. % [cite: 100, 101, 104]
-Then $g^N = e \iff N \text{ is a multiple of } |g|$. % [cite: 105]
+\textbf{Corollary 1.8:} Let $g$ be an element of finite order, and let $N \in \mathbb{Z}$. % [00, 101, 104]
+Then $g^N = e \iff N \text{ is a multiple of } |g|$. % [05]
 
-\textbf{Definition 1.9:} If $G$ is finite as a set, its order $|G|$ is the number of its elements; we write $|G| = \infty$ if $G$ is infinite. % [cite: 106, 107, 111, 112]
+\textbf{Definition 1.9:} If $G$ is finite as a set, its order $|G|$ is the number of its elements; we write $|G| = \infty$ if $G$ is infinite. % [06, 107, 111, 112]
 note that $|g| \le |G| \forall g \in \mathbb{G}$. Indeed, this is a vacuosly true if $|G| = \infty$, if G is finite, cosider the $|G| + 1$ powers
 $$g^0 = e, g,g^2,g^3, ..., g^{|G|}$$ of g. These cannot all be distinct, hence $(\exists i,j) 0 \le i < j \le |G|$ such that $g^i = g^j$
 By Cancellations(That is multiplying on  the right by $g^-i$)
 $$g^{j-i} = e,$$
 Showing $|g| \le (j-1) \le |G|$
 
-\textbf{Proposition 1.10:} Let $g \in G$ be an element of finite order. Then $g^m$ has finite order $\forall m \ge 0$ and % [cite: 122, 123, 124, 125]
-$$|g^m| = \frac{\text{lcm}(m, |g|)}{m} = \frac{|g|}{\gcd(m, |g|)}$$ % [cite: 126]
+\textbf{Proposition 1.10:} Let $g \in G$ be an element of finite order. Then $g^m$ has finite order $\forall m \ge 0$ and % [22, 123, 124, 125]
+$$|g^m| = \frac{\text{lcm}(m, |g|)}{m} = \frac{|g|}{\gcd(m, |g|)}$$ % [26]
 
 \textbf{Proof:} The equality of the tow numbers $\frac{\text{lcm}(m, |g|)}{m}$ and $\frac{|g|}{\gcd(m, |g|)}$ follows from the elementary properties of gcd and lcm:
 $$lem(a,b) =  \frac{\text{ab}}{gcd(a,b)} \forall a \, and \, b$$
@@ -86,44 +86,95 @@ The oder of $g^m$ is the least positive integer d such that $g^{md} = e$, that i
 In other words $m | g^m$ is the smallest multiple of m with is also a multiple of $|g|$: $m | g^m = lcm(m,|g|)$.Thus
 $$\frac{lcm(m,|g|)}{m} = |g^m|$$ The rest of the reslts follows immediately. In general for commuting elemtents,
 
-\textbf{Proposition 1.11:} If $gh = hg$, then $|gh|$ divides $\text{lcm}(|g|, |h|)$. % [cite: 148]
+\textbf{Proposition 1.11:} If $gh = hg$, then $|gh|$ divides $\text{lcm}(|g|, |h|)$. % [48]
+\textbf{Proof:} let $|g| = m, |h| =n$. If N is any common multiple of m and N, then $g^N = h^N = e$ by Corollary 1.8. Since g and h commute
+$$(gh)^N = \underbrace{(gh)(gh)...(gh)}_{n times} = \underbrace{gg...g}_{n \text{times}} \cdot\underbrace{hh...h}_{n \text{times}} = g^N \cdot h^N = e$$
+Since this holds for every common multiple of N of m and n, in particular it holds for lcm(m,n), so
+$$(gh)^{lcm(m,n)} = e$$
+The statement follows from Lemma 1.7
 
-\section*{Symmetric Groups} % [cite: 206]
+\textbf{Exercises}
 
-\textbf{Definition1.12:} A permutation of a set $A$ is a bijective map $A \to A$. % [cite: 207]
+\begin{enumerate}
+    \item Consider the following sets
+        \begin{itemize}
+                \item $\emptyset : $ the empty set
+                \item $\mathbb{N}:$ the set of natural numbers (that is non-negative integers)
+                \item $\mathbb{Z}:$ the set of integers
+                \item $\mathbb{Q}:$ the set of rational numbers
+                \item $\mathbb{R}:$ the set of real numbers
+                \item $\mathbb{C}:$ the set of complex numbers
+            \end{itemize}
+            Decide which of these are madein to groups by conventional operations such + and $\cdot$
+    \item Prove that $(gh)^{-1} = h^{-1}g^{-1} \forall$ elements g,h of a group g
+    \item Suppose that $g^2 = e $ for all elements g of a group G,  prove thatG is communtative
+    \item Prove that there is only one possible multiplication table for G if G has exactly 1,2 or 3 elements. Analyze the possible multiplication tables for groups with exactly 4 elements of G. Use thes tables to prove that all gorups with $\le$ 4 elemtns are commutative
+    \item Prove Corollary 1.8 in the notes
+    \item Let G be a finite abelian group with exactly one lemtn of order 2. Prove that $\prod_{g \in G} g = f$
+    \item Let G be a finite group of order n and let me be the number of elements $g \in G$ or order exactly 2. Prove that n -m is odd. Deduce that if n is ever, then G necessarily contains elements of order 2.
+    \item Suppose the order of g is odd. What can ou say about the order of $g^2$
+\end{enumerate}
 
-\textbf{Definition1.13:} Let $A$ be a set. The symmetric group or group of permutations of $A$, denoted $S_A$, is the group of all bijective maps from $A$ to itself under composition. % [cite: 208, 210]
+\section*{Symmetric Groups} % [06]
 
-The group of permutations of the set $\{1, 2, \ldots, n\}$ is denoted by $S_n$. % [cite: 211]
-The groups $S_n$ are finitely very large—for example if $A = \{1, \ldots, n\}$ then $|S_n| = n!$. % [cite: 213, 215]
+\textbf{Definition1.12:} A permutation of a set $A$ is a bijective map $A \to A$. % [07]
 
-\textbf{Notation:} We will indicate an element $\sigma \in S_n$ by listing the effect of applying $\sigma$ underneath the list $1, \ldots, n$ as a matrix. % [cite: 228, 229, 230, 231, 233]
-Thus the elements $e, f$ in $S_2$ may be denoted by: % [cite: 235]
-$$e = \begin{pmatrix} 1 & 2 \\ 1 & 2 \end{pmatrix}, \quad f = \begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix}$$ % [cite: 236]
+\textbf{Definition1.13:} Let $A$ be a set. The symmetric group or group of permutations of $A$, denoted $S_A$, is the group of all bijective maps from $A$ to itself under composition. % [08, 210]
+
+The group of permutations of the set $\{1, 2, \ldots, n\}$ is denoted by $S_n$. % [11]
+The terminology is easily justified, the bijections from A to itself amounts to permutining the elements of A. This operation may be viewed as a transformation of A wihcih does not change it(as a set) hence a "symmetry" ie groups $S_A$ are very large. For example if $A = \{1,...n\}$ tehn $|S_n| = n!$
+To get a feel  for what these are we consider these examples
+$S_1$ is a trivial group, $S_2$ consists of the two possible permutations
+$$
+\begin{cases}
+1 \mapsto 1\\
+2 \mapsto 2
+\end{cases}
+and \begin{cases}
+    1 \mapsto 2 \\
+    2 \mapsto 1
+\end{cases}
+$$
+Which one call call e(identity) and f(flip) with operation
+$$ee=ff=e, ef=fe=f$$
+
+\textbf{Notation:} We will indicate an element $\sigma \in S_n$ by listing the effect of applying $\sigma$ underneath the list $1, \ldots, n$ as a matrix. % [28, 229, 230, 231, 233]
+Thus the elements $e, f$ in $S_2$ may be denoted by: % [35]
+$$e = \begin{pmatrix} 1 & 2 \\ 1 & 2 \end{pmatrix}, \quad f = \begin{pmatrix} 1 & 2 \\ 2 & 1 \end{pmatrix}$$ %
 
 Using the same notation, $S_3$ consists of
 $$ \left\{ \begin{pmatrix} 1 & 2 & 3 \\ 1 & 2 & 3 \end{pmatrix}, \begin{pmatrix} 1 & 2 & 3 \\ 2 & 1 & 3 \end{pmatrix}, \begin{pmatrix} 1 & 2 & 3 \\ 3 & 2 & 1 \end{pmatrix}, \begin{pmatrix} 1 & 2 & 3 \\ 1 & 3 & 2 \end{pmatrix}, \begin{pmatrix} 1 & 2 & 3 \\ 3 & 1 & 2 \end{pmatrix}, \begin{pmatrix} 1 & 2 & 3 \\ 2 & 3 & 1 \end{pmatrix} \right\} $$
 
 The following describes how any two permutations are multiplied. For example:
 $$ \begin{pmatrix} 1 & 2 & 3 \\ 2 & 1 & 3 \end{pmatrix} \begin{pmatrix} 1 & 2 & 3 \\ 3 & 2 & 1 \end{pmatrix} = \begin{pmatrix} 1 & 2 & 3 \\ 3 & 1 & 2 \end{pmatrix} $$
-We obtain the answer by tracing where each element maps: 1 maps to 3, and then 3 maps to 3. So the product sends 1 to 3. Continuing in this fashion we obtain the desired result.
+We obtain the answer by observing the following:
+$$
+\begin{pmatrix} 1&2&3 \\ 3&1&2 \end{pmatrix} sends \,1 \, to \, 3 \, and \quad \begin{pmatrix} 1&2&3 \\ 2&1&3\end{pmatrix} sends \, 3 \, to \, 3. So \begin{pmatrix}1&2&3 \\ 2&1&3 \end{pmatrix} \begin{pmatrix}1&2&3 \\ 3&2&1\end{pmatrix} sends 1 to 3
+$$
+Continuiing in this fashion we obtain the desired results.
 
 \subsection*{Dihedral groups}
 A symmetry is a transformation which preserves a structure. The symmetries will naturally form groups. One context in which this notion may be visualised clearly is that of 'geometric figures' such as polygons in the plane.
 
-The dihedral groups may be defined as these groups of symmetries for the regular polygons. Placing the polygon so that it is centered at the origin (thereby excluding translations as possible symmetries), we see that the dihedral group for a regular $n$-sided polygon consists of the $n$ rotations by $2\pi/n$ radians about the midpoint, and $n$ distinct reflections about lines through the origin and a vertex or a midpoint of a side. Thus the dihedral group for a regular $n$-sided polygon consists of $2n$ elements. We will denote this group by $D_{2n}$.
-
-There is a way to relate dihedral groups to symmetric groups by considering the fact that a symmetry of a regular polygon is determined by what happens to its vertices. Label the vertices of an equilateral triangle by $1, 2, 3$. Then a counterclockwise rotation by an angle of $2\pi/3$ sends 1 to 2, 2 to 3, and 3 to 1. We associate to it the permutation:
-$$ \begin{pmatrix} 1 & 2 & 3 \\ 2 & 3 & 1 \end{pmatrix} \in S_3 $$
-Such a labeling defines a function $D_6 \longrightarrow S_3$ which is a group homomorphism, and in addition this function is injective. We can think of this as a faithful action of $D_6$ on the set of vertices.
+The dihedral groups may be defined as these groups of symmetries for the regular polygons. Placing the polygon so that it is centered at the origin (thereby excluding translations as possible symmetries), we see that the dihedral group for a regular $n$-sided polygon consists of the $n$ rotations by $2\pi/n$ radians about the origin, and $n$ distinct reflections about lines through the origin and a vertex or a midpoint of a side. Thus the dihedral group for a regular $n$-sided polygon consists of $2n$ elements. We will denote this group by $D_{2n}$.
+We will denote this group by $D_{2n}$
+There is a way to relate dihedral groups to symmetric groups by considering the fact that a symmetry of a regular polygon is determined by what happens to its vertices.For instance, Label the vertices of an equilateral triangle by $1, 2, 3$. Then a counterclockwise rotation by an angle of $2\pi/3$ sends 1 to 3, 3 to 2, and 2 to 1 and no other symmetry of the triangle does the same.In other words with the counterclockwise rotation of the equivalent triangle by $2 \pi/3$ we associate to it the permutation.
+$$ \begin{pmatrix} 1 & 2 & 3 \\ 3 & 2 & 1 \end{pmatrix} \in S_3 $$
+Such a labeling defines a function $D_6 \longrightarrow S_3$ which is a group homomorphism, and in addition this function is injective. We can think of this as a faithful action of $D_6$ on the set $\{1,2,3\}$.
+These function induced by the labelings are group homomorphisms.
 
 \section*{Cyclic groups and Modular arithmetic}
-Let $n$ be a positive integer. Consider the equivalence relation defined by ($a, b \in \mathbb{Z}$):
+Let $n$ be a positive integer. Consider the equivalence relation on $\mathbb{Z} $ defined by ($\forall a, b \in \mathbb{Z}$):
 $$ a \equiv b \pmod n \iff n | (b - a) $$
 This is called congruence modulo $n$.
-The set of equivalence classes is often denoted by $\mathbb{Z}_n$, $\mathbb{Z}/(n)$, or $\mathbb{Z}/n\mathbb{Z}$.
-When we write $[a]_n$ we mean the equivalence class of the integer $a$ modulo $n$, or simply $[a]$ if no ambiguity arises.
-
+The set of equivalence classes is often denoted by $\mathbb{Z_n}_n$, $\mathbb{Z}/(n)$, or $\mathbb{Z}/n\mathbb{Z}$ or $\mathbb{F_n}$
+We will use the $\mathbb{Z_n}$
+So when we write $[a]_n$ we mean the equivalence class of the integer $a$ modulo $n$, or simply $[a]$ if no ambiguity arises.
+The set $Z_n$ consists exactly n elements, namely
+$$[0]_n, [1]_n,...,[n-1]_n$$
+We can use the group structuron $\mathbb{Z}$ to include an (abelian) gorup structure on $\mathbb{Z}/n\mathbb{Z}$. In order to do this, we define an operation  + on $\mathbb{Z}/n\mathbb{Z}$ setting $\forall a,b \in \mathbb{Z}$
+$$[a] + [b] := [a+b]$$
+In the following lemma we show that the operation is well defined: It shows that the result of the operation does not depend on choice of the representations of teh classes.
 \textbf{Lemma 1.13:} If $a \equiv a' \pmod n$ and $b \equiv b' \pmod n$, then
 $$ a + b \equiv a' + b' \pmod n $$
 \textbf{Proof:} By hypothesis $n | (a' - a)$ and $n | (b' - b)$; therefore $\exists k, l \in \mathbb{Z}$ such that
@@ -132,26 +183,50 @@ Then
 $$ (a' + b') - (a + b) = (a' - a) + (b' - b) = kn + ln = (k + l)n $$
 Proving that $n$ divides $(a' + b') - (a + b)$ as needed.
 
-Thus we have a binary operation $+$ on $\mathbb{Z}/n\mathbb{Z}$. Next we check that the resulting structure is a group. Associativity is inherited from $\mathbb{Z}$. Similarly, the identity is $[0]_n$ and the inverse is $-[a]_n = [-a]_n$. It is immediately checked that the resulting groups $\mathbb{Z}/n\mathbb{Z}$ are commutative.
+Thus we have a binary operation $+$ on $\mathbb{Z}/n\mathbb{Z}$. Next we check that the resulting structure is a group. Associativity is inherited from $\mathbb{Z}$.
+$$([a]+[b])+[c] = [a+b]+[c] = [(a+b)+c] = [a+(b+c)]= [a]+([b]+[c])$$
+ Similarly, the identity is $[0]_n$ and the inverse is $-[a]_n = [-a]_n$ are inherited from $\mathbb{Z}$. It is immediately checked that the resulting groups $\mathbb{Z}/n\mathbb{Z}$ are commutative. as teh abelian sytle notation suggests
+ $$[a]+[b] = [a+b] = [b+a] = [b]+[a]$$
+ The abelian groups thus obtained together with $\mathbb{Z}$, are called cyclic groups, an alternative notation for the group($\mathbb{Z}/n\mathbb{Z}, +$)is $C_n$.
+ This is adopted especially when one woants to use the multplicative rather the additive nothation; so that we can say that $C_n$ is generated by on elemtn $x$ with the realtion $x^n = e$
+ Note the fact that the element $[1]_n \in \mathbb{Z}_n$ generates the gourp in the sence that every other element may be obtained as a multiple of this element. For example, if m $\ge$ 0 is an integer, then
+ $$[m]_n = \underbrace{[1+...+1]_n}_{m \, \text{times}} = \underbrace{[1]_n + ... + [1]_n}_{m \, times} = m \cdot [1]_n$$
+ by saying that $[1]_m$ generates $\mathbb{Z}_n$, it implies that the order of $[1]_n \in \mathbb{Z}_n$ is n: that also means that n multiples $0 \cdot [1]_n, 1 \cdot [1]_n, ...,(n-1) \cdot [1]_n$ ust all be sitinct and hece they must fill up $\mathbb{Z}_n$
+
+
 
 \textbf{Proposition 1.14:} The order of $[m]_n$ in $\mathbb{Z}_n$ is $1$ if $n|m$, and more generally
 $$ |[m]_n| = \frac{n}{\gcd(m,n)} $$
+
+\textbf{Proof:} if n | m, then $[m]_n = [0]_n$. If n does not divide m, observe again that $[m]_n = m\cdot[1]_n$. Now the order of $[m]_n$ is the least positive integer d of which $d \cdot[m]_n = [0]_n = dm[1]_n$ . Thuse we see that $d \cdot m$ is the lease multple of m and withc is also m mutiple of n as n divdes $dm$. So b Proposition 1.10
+$$d\cdot m = |[m]_n|m = lcm(m,n). So that |[m]_n = \frac{lcm(m,n)}{m}= \frac{n}{gcd(m,n)}$$ as required.
+\textbf{Remarks:} As a consequence of the abouve, the order of every element of
+$\mathbb{Z}_n$ divides n = $|\mathbb{Z}_n|$, the order of the group.
+This is a genral feature of teh order of elemtns in a finite group.
 
 \textbf{Corollary 1.16:} The class $[m]_n$ generates $\mathbb{Z}_n$ if and only if $\gcd(m,n) = 1$.
 A consequence of the above result is that if $n=p$ is a prime integer, then every non-zero class in the group $\mathbb{Z}_p$ generates it.
 
 Note that there is a well-defined multiplication on $\mathbb{Z}_n$ given by $[a]_n \cdot [b]_n = [ab]_n$. However, this operation does not define a group structure on $\mathbb{Z}_n$; indeed, the class $[0]_n$ does not have a multiplicative inverse.
-For any positive integer $n$, denote by $(\mathbb{Z}_n)^*$ the subset of $\mathbb{Z}_n$ consisting of classes $[m]_n$ such that $\gcd(m,n) = 1$:
+However,for any positive integer $n$, denote by $(\mathbb{Z}_n)^*$ the subset of $\mathbb{Z}_n$ consisting of classes $[m]_n$ such that $\gcd(m,n) = 1$:
 $$ (\mathbb{Z}_n)^* := \{ [m]_n \in \mathbb{Z}_n \mid \gcd(m,n) = 1 \} $$
+This subset is well-defined: if $m \equiv m^\prime (\pmod n)$ then $gcd(m,n) =1 \iff gcd(m^\prime,n) =1.$So the defining property of classes in $(\mathbb{Z}_n)^* $ is independence of representations
+
 
 \textbf{Proposition 1.17:} Multiplication makes $(\mathbb{Z}_n)^*$ into a group.
+\textbf{Proof:} Properties of gcd's show that if $gcd(m_1,n) = gcd(m_2,n)$, then $gcd(m_1m_2,n) = 1. $Therefore the product of two elemtns in $(\mathbb{Z}_n)^* is an element of (\mathbb{Z}_n)^*$ and does define a binary operations
+$$(\mathbb{Z}_n)^* \times (\mathbb{Z}_n)^* \mapsto (\mathbb{Z}_n)^*$$
+It is clear that this operation is associative(because mulplication is associative in Z); $[1]_n$ is an element of $(\mathbb{Z}_n)^*$ and is an identity with respect to multplication , so all we have to check is that elemtns of $(\mathbb{Z}_n)^*$ have mupliplicative inverses in $(\mathbb{Z}_n)^*$
+This follows from Corollary 1.16. If $gcd(m,n) = 1 $, then $[m]_n$ generates the addivtive group $\mathbb{Z}_n$ and hence osme mulples of $[m]_n$ must equal $[1]_n$: ($\exists a \in \mathbb{Z}): a \cdot [m]_n = [1]_n$;
+this implies $[a]_n[m]_n = [1]_n$. Therefore $[m]_n$ does have a mulplicative inverse in $(\mathbb{Z}_n)^*$ namely $[a]_n $[Check that $[a]_n \in (\mathbb{Z}_n)^* i.e gcd(a,n) =1 $]. This completes teh proof.
 
 \section*{Group Homomorphisms}
 
-Let $(G, \cdot_G)$ and $(H, \cdot_H)$ be two groups.
+Let $(G, m_G)$ and $(H, m_H)$ be two groups where.
+$$ m_G : G \times G \mapsto G \quad and \quad m_H : H \times H \mapsto H$$
 
-\textbf{Definition 2.1:} A map $\varphi : G \to H$ is a group homomorphism if $\forall a, b \in G$,
-$$ \varphi(a \cdot_G b) = \varphi(a) \cdot_H \varphi(b) $$
+\textbf{Definition 2.1:} A map $\varphi : G \mapsto H$ is a group homomorphism if $\forall a, b \in G$,
+$$ \varphi(a \cdot b) = \varphi(a) \cdot \varphi(b) $$
 In other words, $\varphi$ is a homomorphism if it 'preserves the structure'.
 
 \textbf{Proposition 2.2:} Let $\varphi : G \to H$ be a group homomorphism. Then
@@ -162,17 +237,27 @@ In other words, $\varphi$ is a homomorphism if it 'preserves the structure'.
 
 \textbf{Proof:}
 \begin{enumerate}
-    \item To prove the first item, we make use of the cancellation property and the definition of homomorphism. Since $e_G = e_G \cdot e_G$,
-    $$ \varphi(e_G) = \varphi(e_G \cdot e_G) = \varphi(e_G) \cdot \varphi(e_G) $$
-    which implies $e_H = \varphi(e_G)$ by cancelling $\varphi(e_G)$ in $H$.
+    \item To prove the first item, we make use of the cancellation property and the definition of homomorphism. Since $e_H = e_H \cdot e_H$,
+    $$ e_H  \cdot \varphi(e_G) = \varphi(e_G) = \varphi(e_G \cdot e_G) = \varphi(e_G) \cdot \varphi(e_G) $$
+    which implies $e_H = \varphi(e_G)$ by cancelling $\varphi(e_G)$.
     \item $\varphi(g^{-1}) \cdot \varphi(g) = \varphi(g^{-1} \cdot g) = \varphi(e_G) = e_H = \varphi(g)^{-1} \cdot \varphi(g)$
     Thus $\varphi(g^{-1}) = \varphi(g)^{-1}$ by cancellation.
 \end{enumerate}
 
 \subsection*{Examples of group homomorphisms}
-1. Given any two groups $G, H$, we can define a homomorphism $G \to H$ by sending every element of $G$ to the identity $e_H$ of $H$. We call this map the trivial morphism.
+\begin{enumerate}
+    \item  Given any two groups $G, H$, we can define a homomorphism $G \to H$ by sending every element of $G$ to the identity $e_H$ of $H$. We call this map the trivial morphism.
+    \item The exponential function is a homomorphism from $(\mathbb{R}, +)$ to the group $(\mathbb{R}^{+}, \cdot)$ of positive real numbers, with ordinary multiplication as operation. Indeed, $e^{a+b} = e^a e^b$.
 
-2. The exponential function is a homomorphism from $(\mathbb{R}, +)$ to the group $(\mathbb{R}^{>0}, \cdot)$ of positive real numbers, with ordinary multiplication as operation. Indeed, $e^{a+b} = e^a e^b$.
+\end{enumerate}
+Another important example can be obtained as follows: let $G$ be any group and $g \in G$, any element of $G$; define an exponential map
+$$\epsilon_g : \mathbb{Z} \to G \quad by \quad (\forall a \in \mathbb{Z}): \epsilon_g(a) := g^a $$
+Then $\epsilon_g$ is clearly a group homomorphism. The element g generates $G$ if and only if $\epsilon_g$ is surjective. \\
+The following example is an instance of the abouve example of group homomorphism(This works with abelian groups)
+Consider the quotient function
+$$\prod_n : \mathbb{Z} \to \mathbb[Z]_n, \quad a \mapsto a\cdot [1]_n = [a]_n:$$. Using the notation in example $(3)$, this function is sujective hence $[1]_n$ generates $\mathbb{Z}_n.$ In fact , $[m]_n$ generates $\mathbb{Z}_n if and only if gcd(m,n) = 1$
+
+
 
 \textbf{Proposition 2.3:} Let $\varphi : G \to H$ be a group homomorphism, and let $g \in G$ be an element of finite order. Then $|\varphi(g)|$ divides $|g|$.
 

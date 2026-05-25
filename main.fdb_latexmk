@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1779713707.36954 "/home/emmanuel/NEWSTART/MATH/Abstract Algebra/main.tex" "main.pdf" "main" 1779713708.41651 0
+["pdflatex"] 1779729475.90998 "/home/emmanuel/NEWSTART/MATH/Abstract Algebra/main.tex" "main.pdf" "main" 1779729476.79393 0
   "/etc/texmf/web2c/texmf.cnf" 1774274707.24898 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/emmanuel/NEWSTART/MATH/Abstract Algebra/main.tex" 1779708155.8036 241 e7004d2bc613f577b693a54e4a5aff21 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -48,6 +48,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb" 1248133631 32915 7bf7720c61a5b3a7ff25b0964421c9b6 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb" 1248133631 34694 ad62b13721ee8eda1dcc8993c8bd7041 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb" 1248133631 35309 940e81a5b9e04201a07e8b33a3ae6e64 ""
   "/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty" 1591045760 12594 0d51ac3a545aaaa555021326ff22a6cc ""
   "/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty" 1359763108 5949 3f3fd50a8cc94c3d4cbf4fc66cd3df1c ""
   "/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty" 1359763108 13829 94730e64147574077f8ecfea9bb69af4 ""
@@ -68,13 +69,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1774447604.03422 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1774447748 8212520 4c9a735b34bb7265653addb2cf47bf35 ""
-  "chapters/cosets/cosets.aux" 1779713708.14945 991 35bad6ab0287566aeff4d6474b928fba "pdflatex"
-  "chapters/cosets/cosets.tex" 1779713706.85049 4606 dc7e9e8351fa37feea9c7561b545c3f8 ""
-  "chapters/groups/groups.aux" 1779713708.11145 468 0771a391b3f83ba1a67a7788da41920c "pdflatex"
-  "chapters/groups/groups.tex" 1779712890.407 14820 df3395b4cdfb234a438352fb493fc005 ""
-  "chapters/normal_subgroups/normal_subgroups.aux" 1779713708.24745 489 f2f4b633c425d6da1f3b189ed02a0980 "pdflatex"
-  "chapters/normal_subgroups/normal_subgroups.tex" 1776954749.65004 10558 1693534b726455c4c986e8858f85c7c8 ""
-  "main.aux" 1779713708.24745 161 dbcebd9521ed0cdf98a5e6fea24e5109 "pdflatex"
+  "chapters/cosets/cosets.aux" 1779729476.58931 996 754fa9173b9b94ac93861a0e107782c1 "pdflatex"
+  "chapters/cosets/cosets.tex" 1779713771.80359 4575 471579659dccab89010943a79c881c0c ""
+  "chapters/groups/groups.aux" 1779729476.54531 469 55987ff17d90dfaeda93a66496e12ba9 "pdflatex"
+  "chapters/groups/groups.tex" 1779729475.5263 21833 e533373467c742c5c473420f45ca243f ""
+  "chapters/normal_subgroups/normal_subgroups.aux" 1779729476.64131 489 f46759934454fa4bc505fc2245bc7204 "pdflatex"
+  "chapters/normal_subgroups/normal_subgroups.tex" 1779714479.54409 10096 9323d583542524d5bb9eb408137e42bc ""
+  "main.aux" 1779729476.64231 161 c85f312a57acd6e485747793325d13a0 "pdflatex"
   "main.tex" 1779708155.8036 241 e7004d2bc613f577b693a54e4a5aff21 ""
   (generated)
   "chapters/cosets/cosets.aux"

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1779729475.90998 "/home/emmanuel/NEWSTART/MATH/Abstract Algebra/main.tex" "main.pdf" "main" 1779729476.79393 0
+["pdflatex"] 1779813671.70514 "/home/emmanuel/NEWSTART/MATH/Abstract Algebra/main.tex" "main.pdf" "main" 1779813672.57859 0
   "/etc/texmf/web2c/texmf.cnf" 1774274707.24898 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/emmanuel/NEWSTART/MATH/Abstract Algebra/main.tex" 1779708155.8036 241 e7004d2bc613f577b693a54e4a5aff21 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -69,13 +69,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1774447604.03422 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1774447748 8212520 4c9a735b34bb7265653addb2cf47bf35 ""
-  "chapters/cosets/cosets.aux" 1779729476.58931 996 754fa9173b9b94ac93861a0e107782c1 "pdflatex"
+  "chapters/cosets/cosets.aux" 1779813672.44539 996 b3e11506f724eb6336cfcad5ad78c596 "pdflatex"
   "chapters/cosets/cosets.tex" 1779713771.80359 4575 471579659dccab89010943a79c881c0c ""
-  "chapters/groups/groups.aux" 1779729476.54531 469 55987ff17d90dfaeda93a66496e12ba9 "pdflatex"
-  "chapters/groups/groups.tex" 1779729475.5263 21833 e533373467c742c5c473420f45ca243f ""
-  "chapters/normal_subgroups/normal_subgroups.aux" 1779729476.64131 489 f46759934454fa4bc505fc2245bc7204 "pdflatex"
+  "chapters/groups/groups.aux" 1779813672.41839 469 26409f110f83d598f40fba155682fa91 "pdflatex"
+  "chapters/groups/groups.tex" 1779813671.30661 30807 4b96127673ec4e986fee96c91f26ea69 ""
+  "chapters/normal_subgroups/normal_subgroups.aux" 1779813672.47838 489 048c0b1aa1785a1885338f63cff78773 "pdflatex"
   "chapters/normal_subgroups/normal_subgroups.tex" 1779714479.54409 10096 9323d583542524d5bb9eb408137e42bc ""
-  "main.aux" 1779729476.64231 161 c85f312a57acd6e485747793325d13a0 "pdflatex"
+  "main.aux" 1779813672.47838 161 abf0e9b31aaad02de4c10ba3a6059167 "pdflatex"
   "main.tex" 1779708155.8036 241 e7004d2bc613f577b693a54e4a5aff21 ""
   (generated)
   "chapters/cosets/cosets.aux"

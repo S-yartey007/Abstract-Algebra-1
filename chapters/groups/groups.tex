@@ -258,15 +258,52 @@ Consider the quotient function
 $$\prod_n : \mathbb{Z} \to \mathbb[Z]_n, \quad a \mapsto a\cdot [1]_n = [a]_n:$$. Using the notation in example $(3)$, this function is sujective hence $[1]_n$ generates $\mathbb{Z}_n.$ In fact , $[m]_n$ generates $\mathbb{Z}_n if and only if gcd(m,n) = 1$
 
 
+\textbf{Homomorphism and order}
+Group homorphisms are set functions preserving the group structure; as such, they must preserve many features of the them.
+As we saw in Proposition 2.2, group homomorphisms mmust preserve indenties adn inverses. It is also clear that if $\varphi : G \to H $ is a group homomorphism and g is an element of finite order in $G$, then $\varphi(g)$ must be an elemetn of ininte order in $H$. Indeed, if $g^n = e_G$ for some $n > 0$, then
+$$\varphi(g)^n = \varphi(g^n) = \varphi(e_G) = e_H$$
+We make this observation more precise
 
 \textbf{Proposition 2.3:} Let $\varphi : G \to H$ be a group homomorphism, and let $g \in G$ be an element of finite order. Then $|\varphi(g)|$ divides $|g|$.
+\textbf{Proof:} We observed that $varphi(g)^{|g|} = g_H$. Therefore applying lemma 1.7 gives the statement.
+
+\textbf{Example 2.41}
+\begin{enumerate}
+    \item There are no non-trivial homomorphisms $\mathbb{Z}_n \to \mathbb{Z}$. Indeed, the image of every element of $\mathbb{Z}$ must have finite order, and the only element with finite order in $(\mathbb{Z}, +)$ is $0$.
+    \item There are no non-trivial homomorphism $\varphi : C_4 \to C_7$. Indeed, the orders of elements on $C_4$ divide 4 and the orders of elements in $C_7$ divide 7. Thus, the order of each $\varphi(g)$ must divide both 4 and 7; tis forces $|\varphi(g)| = 1$ for all $g$, that is $\varphi(g) = e$ for all $g \in C_4$.
+\end{enumerate}
+In general under homomorphiss order is not perserved. Order is preserved under isomorphisms. So what is an isomorphism?
+
 
 \subsection*{Isomorphisms}
-\textbf{Definition 2.8:} Two groups $G, H$ are isomorphic if there is a bijective group homomorphism $\varphi : G \to H$. We write $G \cong H$.
+\textbf{Definition} An isomorphism of gourps $\varphi : G \to  H $ is a group homomorphism admitting an inverse $\varphi^{-1} : H \to G$ which is also a group homomorphism. In other words, an isomorphism of two groups $\varphi : G \to H$  is a bijective group homomorphism.
 
 \textbf{Proposition 2.5:} Let $\varphi : G \to H$ be a group homomorphism. Then $\varphi$ is an isomorphism of groups if and only if it is a bijection.
+\textbf{Proof:} $(\implies)$ is clear from the definition. For the other implication now assume $\varphi : G \to H$ is a bijective group homomorphism. As a bijection it has an inverse $\varphi : H \to G$; we only have to check that $\varphi^{-1}$ is a group hommorphism. Let $h_1,h_2 $ be elements of $H$ and let $g_1 = \varphi^{-1}(h_2)$ be the corresponding
+ elements of G. Then
+ $$\varphi^{-1}(h_1 \cdot h_2 ) = \varphi^{-1}(\varphi(g_1)\varphi(g_2)) = \varphi^{-1}(\varphi(g_1g_2)) = g_1 \cdot g_2 = \varphi^{-1}(h_1)\varphi^{-1}(h_2)
+ $$
+as required
 
-\textbf{Definition 2.9:} A group $G$ is cyclic if it is isomorphic to $\mathbb{Z}$ or to $\mathbb{Z}_n$ for some $n$.
+\textbf{Example 2.6} The function $D_6 \to S_3$ defined previously is an isomorphism of groups, since it is  a bijective group homomorphism
+\textbf{Example 2.7} The exponential function $(\mathbb{R},+) \to (\mathbb{R^+},\cdot)$ mentioned under the examples of homomophisms is also an isomorphism
+Note that if the exponential function $\epsilon_g : \mathbb{Z} \to G$ determined by an element $g \in G$ is an isomorphism, we sa that $G$ is an infinite cyclic group
+
+\textbf{Definition 2.8} Two groups $G,H$ are isomorphic if there is an bijective gourp homomorphism $G \to H$.
+Note that "isomorphic" is an equivalence relation ,we write $G \cong H$ if $G and H$ are isomorphic.
+Automorphisms of a group $G$ are isomorphisms $G \to G$; these form a grop called $Aut(G)$.
+
+\textbf{Definition 2.9:} A group $G$ is cyclic if it is isomorphic to $\mathbb{Z}$ or to $\mathbb{C}_n =\mathbb{Z}$ for some $n$.
+
+\textbf{Proposition 2.10} Let $\varphi : G \to H $ be an isomorphism
+\begin{itemize}
+    \item $(\forall g \in G): |\varphi(g)| = |g|$
+    \item $G$ is communtative if and only if H is communtative
+\end{itemize}
+
+\textbf{Proof: }The first assertion follows from Proporsition 2.3: the order $\varphi(g)$ divides the order of g and on the other hand the order of$g = \varphi^{-1}(\varphi(g))$ must divide the order of $\varphi(g)$; thus the tow orders must be equal.
+The second assertion is an exercise.
+\textbf{Example 2.11} $C_6 \cong S_3$, since one is communtative adn the other is not. Anothe reason is the following: in $C_6$ there is one element of order $1$, two of order $2$ and two of order $6$; in $S_3$ the situation is diffent: one element of order $1$, three elements of order $2$, two elements of order $3$
 
 \section*{Subgroups}
 
@@ -274,20 +311,57 @@ $$\prod_n : \mathbb{Z} \to \mathbb[Z]_n, \quad a \mapsto a\cdot [1]_n = [a]_n:$$
 
 \textbf{Proposition 3.2:} A non-empty subset $H$ of a group $G$ is a subgroup if and only if
 $$ \forall (a, b \in H) : ab^{-1} \in H $$
+\textbf{Proof:} It is clear that if H is a subgroup, then the stated condition holds indeed, for $ a,b \in H$, then the inverse of b must also be in $H$ and $H$ is closed under the operation of $G$
+conversely, assume the stated condition holds, we have to check that it is closed under the operation of $G$. the induced operation on $H$ is associative and it admits an indentity element and inverses. Since $H$ is non - empty we can find an element $h \in H$. choosing $a=b=h$ we see that $$e_G = hh^{-1}=ab^{-1} \in H;$$ thus $H$ contains the indentity. Given any $h \in H$ choosing $a=e_G$ and $b=h$ shows that
+
+$$h^{-1} = e_Gh^{-1}=ab^{-1} \in H$$, thuse H contains the inverse of any of its elements. Given any $h_1,h_2 \in H$, choose $a=h_1, b=h_2^{-1}$; the stated condition says that
+$$h_1h_2 = h_1((h_2)^{-1})^{-1} = ab^{-1} \in H$$, proving that H is closed under the operation. Finally, the fact that the operation is associative in $G$ implies immediately that the induced operation is associative in $H$, concluding the proof that $H$ with the induced operation is a group.
 
 \textbf{Lemma 3.3:} If $\{H_\alpha\}_{\alpha \in A}$ is any family of subgroups of a group $G$, then
 $$ H = \bigcap_{\alpha \in A} H_\alpha $$
 is a subgroup of $G$.
+\textbf{Proof:} This follows from Proposition 3.2: $H$ is non-empty because $e \in H_\alpha$ for all $\alpha$, so $e \in H_\alpha$ and
+$$a,b \in H \implies (\forall \alpha \in A): a,b \in H_\alpha \implies (\forall \alpha \in A) : ab^{-1} \in H_\alpha \implies ab^{-1} \in H$$ proving that $H$ is a subgroup of $G$
 
 \textbf{Lemma 3.4:} Let $\varphi : G \to G'$ be a group homomorphism, and let $H'$ be a subgroup of $G'$. Then $\varphi^{-1}(H')$ is a subgroup of $G$.
+\textbf{Proof:} Recall that $\varphi^{-1}(H^\prime) = \{g \in G| \varphi(g) \in H^\prime \}$. Since $\varphi(e_G) = e_G^\prime \in H^\prime$, this set is non-empty. If $a,b \in \varphi^{-1}(H^\prime)$, then $\varphi(a) and \varphi(b)$ are in $H^{-1}$ and hence
+$$\varphi(ab^{-1}) = \varphi(a)\varphi(b)^{-1} \in H^\prime$$. Therefore $ab^{-1} \in \varphi^{-1}(H^\prime)$. This implies that $\varphi^{-1}(H^\prime)$ is a subgroup of $G$ by Proposition 3.2.
 
-\textbf{Definition 3.5 (Kernel and Image):}
+\textbf{Examples(Kernel and Image)}
 Every group homomorphism $\varphi : G \to G'$ determines two interesting subgroups:
 \begin{itemize}
     \item the kernel of $\varphi$, $\ker \varphi \subseteq G$; and
     \item the image of $\varphi$, $\text{im } \varphi \subseteq G'$.
 \end{itemize}
-The kernel of $\varphi$ is the subset of $G$ consisting of elements mapping to the identity in $G'$:
+\textbf{Definition 3.5 (Kernel and Image):}
+The kernel of $\varphi : G \to G^\prime$ is the subset of $G$ consisting of elements mapping to the identity in $G'$:
 $$ \ker \varphi := \{ g \in G \mid \varphi(g) = e_{G'} \} = \varphi^{-1}(\{e_{G'}\}) $$
+Since $\{e_G^\prime\}$ is a subgroup of $G^\prime$, Lemma 3.4 shows that the kernel is indeed a subgroup of $G$. Explicitly, note tha $ker\varphi$ is a non-empty, since $e_G \in ker\varphi$, and if $a,b \in ker\varphi$, then
+$$\varphi(ab^{-1}) = \varphi(a) \varphi(b)^{-1} = e_G^\prime (e_G^\prime)^{-1}=e_G^\prime$$ Proving that $ab^{-1} \in ker\varphi$. This proves that $ker\varphi$ is a subgroup of $G$, by Proposition 3.2
+As an exercise verify that $im\varphi$ is a subgroup of $G^\prime$. check also that the image of any subgroup of G is a subgroup of $G^\prime$
 
-\textbf{Definition 3.6:} A group $G$ is finitely generated if there exists a finite subset $A \subseteq G$ such that $G = \langle A \rangle$.
+\textbf{Subgroup generated by a subset}if $A \subseteq G$ then is any  subset, we have a unique group homomorphism
+$$\varphi_A : \mathbb{F}(A) \to G$$. Extending this inclusion. The image of this homomorphism is a subgroup of $G$. A subgroup generated by $A$ in $G$, oftern denoted $\langle A \rangle$. The subgroup of $\langle A \rangle$ consits of all products in G of the form $a_1a_2a_3...a_n$ where each $a_i$ is either an element of $A$, an inverse of an element of A, or the identity. alternatively, $\langle A \rangle$ is described as the intersection of all subgroups of $G$ containing A, that is
+$$\langle A \rangle = \bigcap_{H \, subgroup \, of \, G, \, A \subseteq H} H$$ Indeed the intersection of on the right -hand side is a subgroup of $G$ by Lemma 3.3, it contains $A$ and it is clearly the smallest subgroup satisfying this condition.
+if $A = \{g\}$ consists of a single element, then $\mathbb{F}(A) = \mathbb{Z}$ and $\varphi_A : \mathbb{Z} \to A$. The exponential map $\epsilon, \langle A \rangle = \langle g \rangle$ is the image of this
+$$\langle g \rangle = im(\epsilon_g) = \{..., g^{-2},g^{-1},e,g^{1},g^{2},...\}$$
+The subgroup $\langle g \rangle$ is the "cyclic subgroup generated by g"; indeed , $\langle g \rangle$ is the cyclic in the sense of Definition 2.9.
+
+\textbf{Definition 3.6} A group $G$ is finitely generated if the exists a finite subset $A \subseteq G$ such that  $G = \langle A \rangle $. For example cyclic groups are finitely generated.
+By definition, a groug is finitely if and only if there is a surjective homomorphism
+$$\mathbb{F}(\{1,...,n\}) \to G$$ for some N
+
+\textbf{Exercise Sheet 2}
+\begin{enumerate}
+    \item Define a homomorphism $D_8 \to S_4$ by labeling vertices of a square like we did for a triangle in the notes. List the 8 permutations in the range of the is homomorphism.
+    \item Describe generators and relations for all dihedral groups $D_{2n}$ (Hint: let x be the refletion albout the line through the center of a regular n.gon about )and ley y be the counterclockwise rotation by $2\pi/n$. Teh group $D_{2n}$ will  be generated by x and y , subject ot theree relations such that these relations determine $D{2n}$, use them to show that any product
+    $x^1$ equals $x^iy^i$ for some i,j wth $0 \le i \le 1, 0 \le j \le i$.
+    \item Verify carefully that "congrunce modn" is an equivalence relation.
+    \item Prove that $\mathbb{Z}_n$ consists of presisely n elements.
+    \item Prove that the square of every odd integer is congrunt to 1 modulo 8
+    \item Prove that there are non non- zero intergers $a,b,c$ such hat $a^2 + b^2 = 3c^2$
+    \item By studying the equation $[a]_4^2 + [b]_4^2 = 3[c]_4^2$ in $\mathbb{Z}_4$, show that a,b,c would all have to be even.
+    \item Prove that if $gcd(m,n) = 1,$ then there exsit integers a and b such that
+    $$am + bn = 1 \quad corrollary \quad 1.16$$
+    \item  conversely prove that if am + bm = 1 for some integers a and b
+\end{enumerate}

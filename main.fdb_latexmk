@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1780679131.60774 "/home/emmanuel/NEWSTART/MATH/Abstract Algebra/main.tex" "main.pdf" "main" 1780679134.8599 0
+["pdflatex"] 1780746546.68385 "/home/emmanuel/NEWSTART/MATH/Abstract Algebra/main.tex" "main.pdf" "main" 1780746548.6648 0
   "/etc/texmf/web2c/texmf.cnf" 1774274707.24898 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/emmanuel/NEWSTART/MATH/Abstract Algebra/main.tex" 1780588134.97278 330 2888d35c498c97b7f4a4433a56c64e0e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -159,15 +159,15 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1774447604.03422 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1774447748 8212520 4c9a735b34bb7265653addb2cf47bf35 ""
-  "chapters/cosets/cosets.aux" 1780679133.7604 469 2e34158c1ef1a9175b5c255201d00f5f "pdflatex"
+  "chapters/cosets/cosets.aux" 1780746547.99737 469 2e34158c1ef1a9175b5c255201d00f5f "pdflatex"
   "chapters/cosets/cosets.tex" 1780587957.12719 5571 dff63bc220465630d33f2646a1e9cb37 ""
-  "chapters/groups/groups.aux" 1780679133.29309 469 26409f110f83d598f40fba155682fa91 "pdflatex"
+  "chapters/groups/groups.aux" 1780746547.81138 469 26409f110f83d598f40fba155682fa91 "pdflatex"
   "chapters/groups/groups.tex" 1779813712.26002 30807 4b96127673ec4e986fee96c91f26ea69 ""
-  "chapters/normal_subgroups/quotient by normal_subgroups.aux" 1780679134.63912 501 4f7a310747c6b7e1e345ab106c68ebce "pdflatex"
-  "chapters/normal_subgroups/quotient by normal_subgroups.tex" 1780679131.17004 29322 6e5c78242ea0dc126f093d9c12e90f87 ""
-  "chapters/subgroups/subgroup.aux" 1780679133.71147 784 61794f68aa2bf6966c52a0f34647cab7 "pdflatex"
+  "chapters/normal_subgroups/quotient by normal_subgroups.aux" 1780746548.49934 501 24405771ebd311d75d8839c86fa9181d "pdflatex"
+  "chapters/normal_subgroups/quotient by normal_subgroups.tex" 1780746546.21146 45316 69a968f8313e4ec5a711e7dc828b5f11 ""
+  "chapters/subgroups/subgroup.aux" 1780746547.97437 784 61794f68aa2bf6966c52a0f34647cab7 "pdflatex"
   "chapters/subgroups/subgroup.tex" 1780585524.80434 10205 fd03a0a64970e393616449d22f14617e ""
-  "main.aux" 1780679134.64012 256 46f89e4d58dc526a60882a76af01899d "pdflatex"
+  "main.aux" 1780746548.50034 256 0b32f4a88bf173c9b1de50a8cf94bc19 "pdflatex"
   "main.tex" 1780588134.97278 330 2888d35c498c97b7f4a4433a56c64e0e ""
   (generated)
   "chapters/cosets/cosets.aux"
